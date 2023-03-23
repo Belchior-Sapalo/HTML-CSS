@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping text</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(96, 112, 107);
+            margin: 0px;
+        }
+        header{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: rgb(22, 110, 110);
+            
+            
+        }
+
+       
+        article > h2{
+            padding-top: 10px;
+        }
+
+        article > aside{
+            background-color: rgb(1, 53, 53);
+        }
+
+        main{
+            background-color: beige;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px 40px;
+
+        }
+
+        nav{
+            background-color: rgb(9, 82, 82);
+            padding: 3px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+            
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: beige;
+            font-weight: bold;
+            margin-right: 10px;
+            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        footer{
+            background-color: black;
+            color: beige;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        aside{
+            margin: 10px;
+        }
+
+       
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">L1</a>
+            <a href="#">L2</a>
+            <a href="#">L3</a>
+            <a href="#">L4</a>
+            <a href="#">L5</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Musica, Rap e Diversos</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre Bailundo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem harum maxime architecto repellat nulla corporis? Delectus, soluta velit atque aliquid praesentium totam tempore, corporis corrupti consequuntur saepe officiis sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates, aliquid nostrum sint nobis ducimus veritatis libero suscipit nisi unde soluta expedita. Nobis eos blanditiis, error deleniti alias ipsam nulla!</p>
+                <aside>
+                    <p>artigo escrito por Belchior</p>
+                </aside>
+                
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Belchior</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

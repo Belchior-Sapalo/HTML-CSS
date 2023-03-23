@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  Selectores Personalizados
+            # é id
+            . class
+            : é pseudo-class
+            :: é pseudo-elemento
+            > é choldren(Filho)
+        */
+
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Pseudo-Classes são palavras que definem estado de elementos dentro do HTML*/
+        
+        a:visited{ /*Como o elemento fica depois de visitado*/
+            color: rgb(128, 2, 2);
+        }
+        a:hover{ /*O que acontece quando passo com o mouse por cima do elemento*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{ /*O que acontece quando clico no elemento*/
+            background-color: rgb(9, 255, 0);
+        }
+
+        a::after {
+            content:'⇒';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        a::before{
+            content:' ⇐';
+        }
+
+        .especial{
+            background-color: aqua;
+        }
+        .especial::before{
+            content: '➫';
+        }
+
+        .especial::after{
+            content: '➫';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://web.facebook.com/belciorsapalo.benilson/" target="_blank" class="especial">Facebook</a></li>
+        <li><a href="https://www.instagram.com/benilsonbelchior/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCEMuLmjleAxJ-ij3zi1Qhsg" target="_blank">Youtube</a></li>
+    </ul>
+    
+</body>
+</html>

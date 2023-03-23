@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando id, class, pseudo-class e pseudo-element</title>
+    <style>
+        h1{
+            color: rgb(255, 0, 0);
+        }
+        #principal{
+            color: aqua;
+        }
+
+        .recentes{
+            background-color: aquamarine;
+        }
+        .outros{
+            background-color: rgb(0, 255, 106);
+        }
+
+        .destaque{
+            background-color: blue;
+        }
+
+        div{
+            color: rgb(0, 255, 13);
+        }
+
+        div > p.descr{
+            color: black;
+            display: none;
+            
+        }
+
+        div:hover > p.descr{
+            display: block;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1 id="principal">Olá, Bem vindo!</h1>
+
+    <h1 class="destaque">Conteudos</h1>
+    <h2 class="recentes">Recentes</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic magni. In eligendi consequuntur qui sed adipisci cupiditate, laudantium velit, excepturi libero architecto, voluptas alias quidem repudiandae officia accusantium ut.</p>
+
+    <h2 class="outros">Outros</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, adipisci inventore aspernatur pariatur, molestiae praesentium odit laudantium unde debitis asperiores voluptates explicabo eligendi, assumenda soluta sint distinctio illo! Molestiae, dolor.</p>
+
+    <h1 class="destaque">Imagens e links</h1>
+    <h2 class="recentes">Recentes</h2>
+    <img src="Cover Versos da Alma (EP).jpg" height="200" width="200"  alt=""> 
+    <br>
+        <div>
+            <p> ver mais...</p>
+            <p></p>
+
+            <p class="descr">
+                Artista: Belchior Benilson <br>
+                Título: Veros da Alma <br>
+                Ano: 2023 <br>
+                Produtor: Mirelson Beat <br>
+                Àlbum: <del>Desconhecido</del> <br>
+                Projecto: <ins>Versos da Alma(EP)</ins> <br>
+                <a href="#"> <img src="download.png"  alt=""></a>
+            </p>
+
+            
+        </div>
+    <h2 class="outros">Outos</h2>
+</body>
+</html>
